@@ -1,0 +1,5 @@
+New-Item -Path "HKCU:\SOFTWARE\Classes\Directory\Background\shell\" -Name "ps1_shell"
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Classes\Directory\Background\shell\ps1_shell\" -Name "(Default)" -Value "Powershell Here"
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Classes\Directory\Background\shell\ps1_shell\" -Name "Icon" -Value "C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+New-Item -Path "HKCU:\SOFTWARE\Classes\Directory\Background\shell\ps1_shell" -Name "command"
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Classes\Directory\Background\shell\ps1_shell\command" -Name "(Default)" -Value "C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
